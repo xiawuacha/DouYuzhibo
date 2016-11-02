@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eXb-Fm-3Gl" customClass="RecommendCycleView" customModule="DouYuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6lq-WK-oNy">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="1dC-eg-wFr">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="eXb-Fm-3Gl" id="cz3-2k-CO2"/>
+                        <outlet property="delegate" destination="eXb-Fm-3Gl" id="Umg-s4-C7a"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8oE-qy-fTT">
+                    <color key="pageIndicatorTintColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.4431119704" blue="0.21514970999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8oE-qy-fTT" secondAttribute="bottom" constant="-3" id="0NX-av-m82"/>
+                <constraint firstItem="6lq-WK-oNy" firstAttribute="top" secondItem="eXb-Fm-3Gl" secondAttribute="top" id="e2c-gA-FEq"/>
+                <constraint firstAttribute="trailing" secondItem="8oE-qy-fTT" secondAttribute="trailing" constant="10" id="f9N-Ut-JKy"/>
+                <constraint firstAttribute="trailing" secondItem="6lq-WK-oNy" secondAttribute="trailing" id="fkm-Ie-jOa"/>
+                <constraint firstItem="6lq-WK-oNy" firstAttribute="leading" secondItem="eXb-Fm-3Gl" secondAttribute="leading" id="qjK-lC-uGs"/>
+                <constraint firstAttribute="bottom" secondItem="6lq-WK-oNy" secondAttribute="bottom" id="rn5-zK-XMz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="6lq-WK-oNy" id="SfW-yJ-t9c"/>
+                <outlet property="pageControl" destination="8oE-qy-fTT" id="A2y-Vu-T9S"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="299"/>
+        </view>
+    </objects>
+</document>

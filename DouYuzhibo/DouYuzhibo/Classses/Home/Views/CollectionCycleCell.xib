@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Y7-hN-ASp" customClass="CollectionCycleCell" customModule="DouYuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="boh-Ub-fG5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYX-Yi-gXp" customClass="CollectionCycleCell" customModule="DouYuzhibo" customModuleProvider="target">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小码哥IT教育" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hv-kd-Qy3">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="9r3-1y-A9r"/>
+                            <constraint firstItem="1hv-kd-Qy3" firstAttribute="centerY" secondItem="pYX-Yi-gXp" secondAttribute="centerY" id="IU0-OA-ZNm"/>
+                            <constraint firstItem="1hv-kd-Qy3" firstAttribute="leading" secondItem="pYX-Yi-gXp" secondAttribute="leading" constant="15" id="eMF-iI-jnW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pYX-Yi-gXp" firstAttribute="leading" secondItem="4Y7-hN-ASp" secondAttribute="leading" id="9G3-En-OMK"/>
+                <constraint firstItem="boh-Ub-fG5" firstAttribute="leading" secondItem="4Y7-hN-ASp" secondAttribute="leading" id="Ffi-kq-8UG"/>
+                <constraint firstAttribute="trailing" secondItem="pYX-Yi-gXp" secondAttribute="trailing" id="NiU-Nm-OML"/>
+                <constraint firstAttribute="bottom" secondItem="boh-Ub-fG5" secondAttribute="bottom" id="OM7-OE-YXh"/>
+                <constraint firstAttribute="trailing" secondItem="boh-Ub-fG5" secondAttribute="trailing" id="XGR-lf-uBg"/>
+                <constraint firstItem="boh-Ub-fG5" firstAttribute="top" secondItem="4Y7-hN-ASp" secondAttribute="top" id="cKz-Yc-w6e"/>
+                <constraint firstAttribute="bottom" secondItem="pYX-Yi-gXp" secondAttribute="bottom" id="ve8-wD-hxP"/>
+            </constraints>
+            <size key="customSize" width="314" height="152"/>
+            <connections>
+                <outlet property="iconImage" destination="boh-Ub-fG5" id="VI4-yL-a7g"/>
+                <outlet property="titleLabel" destination="1hv-kd-Qy3" id="Hl4-iE-M1u"/>
+            </connections>
+            <point key="canvasLocation" x="372" y="145"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

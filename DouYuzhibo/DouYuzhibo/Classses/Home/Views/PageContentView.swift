@@ -168,7 +168,7 @@ extension PageContentView : UICollectionViewDelegate {
 extension PageContentView {
     func setCurrentIndex(_ currentIndex : Int) {
         
-        // 1.记录需要进制执行代理方法
+        // 1.记录需要禁止执行代理方法
         isForbidScrollDelegate = true
         
         // 2.滚动正确的位置

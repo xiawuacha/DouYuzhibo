@@ -15,6 +15,7 @@ protocol PageTitleViewDelegate : class {
 
 // MARK:- 定义常量
 private let kScrollLineH : CGFloat = 2
+//元祖类型
 private let kNormalColor : (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
 private let kSelectColor : (CGFloat, CGFloat, CGFloat) = (255, 128, 0)
 
@@ -165,12 +166,15 @@ extension PageTitleView {
         let targetLabel = titleLabels[targetIndex]
         
         // 2.处理滑块的逻辑
+          //需要滑动的距离
         let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+           //实时滑动的距离
         let moveX = moveTotalX * progress
+        //横线的位置
         scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
         
         // 3.颜色的渐变(复杂)
-        // 3.1.取出变化的范围
+        // 3.1.取出变化的范围(可以变化的范围 从灰色----橘色)colorDelta(元祖类型)
         let colorDelta = (kSelectColor.0 - kNormalColor.0, kSelectColor.1 - kNormalColor.1, kSelectColor.2 - kNormalColor.2)
         
         // 3.2.变化sourceLabel

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DouYuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="XXG-34-8Dv">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈 我是哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-Os-lnG">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="oVC-zf-asd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N15-CV-2g4">
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="ORA-Ld-fVC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="6666在线" image="ico_location">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-td-Ptl">
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="f2f-ge-YFi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="我是主播" image="Image_online">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wUe-Os-lnG" firstAttribute="top" secondItem="XXG-34-8Dv" secondAttribute="bottom" constant="2" id="71I-rS-TY4"/>
+                <constraint firstItem="wUe-Os-lnG" firstAttribute="top" secondItem="XXG-34-8Dv" secondAttribute="bottom" constant="2" id="8CK-WS-7A5"/>
+                <constraint firstAttribute="trailing" secondItem="XXG-34-8Dv" secondAttribute="trailing" id="EFu-TG-PHu"/>
+                <constraint firstItem="wUe-Os-lnG" firstAttribute="top" secondItem="ht6-td-Ptl" secondAttribute="bottom" constant="2" id="I7J-b2-qdY"/>
+                <constraint firstAttribute="trailing" secondItem="wUe-Os-lnG" secondAttribute="trailing" constant="5" id="RfT-iV-9Lw"/>
+                <constraint firstItem="XXG-34-8Dv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V4P-fj-1h1"/>
+                <constraint firstItem="ht6-td-Ptl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="akT-yr-Q1w"/>
+                <constraint firstAttribute="bottom" secondItem="wUe-Os-lnG" secondAttribute="bottom" constant="5" id="efb-UJ-t7m"/>
+                <constraint firstItem="wUe-Os-lnG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="oJX-84-rUs"/>
+                <constraint firstItem="XXG-34-8Dv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p39-Mb-mYH"/>
+                <constraint firstAttribute="trailing" secondItem="N15-CV-2g4" secondAttribute="trailing" constant="2" id="rxB-SL-x6R"/>
+                <constraint firstItem="N15-CV-2g4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="zNJ-lz-9ZS"/>
+            </constraints>
+            <size key="customSize" width="236" height="123"/>
+            <connections>
+                <outlet property="anchorNameBtn" destination="ht6-td-Ptl" id="jNh-rn-iws"/>
+                <outlet property="countBtn" destination="N15-CV-2g4" id="pgg-kJ-7AS"/>
+                <outlet property="image" destination="XXG-34-8Dv" id="ZjL-2J-Zzc"/>
+                <outlet property="titleLabel" destination="wUe-Os-lnG" id="29K-YF-pNY"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="4.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="ico_location" width="12" height="12"/>
+    </resources>
+</document>
